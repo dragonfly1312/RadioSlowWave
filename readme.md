@@ -1,2 +1,6 @@
 Now hosting 
-https://radio.indymedia.pt/public/paralelo
+Rádio Paralelo
+Rádio Trevo
+want to host with us? send us a mail: paralelo [at] riseup.net 
+
+Running on [Azuracast]([url](https://www.azuracast.com/)) webserver
