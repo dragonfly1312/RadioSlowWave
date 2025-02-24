@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homemade Radio Channel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .rss-feed {
+            margin-bottom: 20px;
+        }
+        .embed-iframe {
+            margin-top: 20px;
+        }
+    </style>
 </head>
-
 <body>
-
-<!-- SCM Music Player https://www.scmplayer.net -->
-<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
-data-config="{'skin':'skins/tunes/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'top','showplaylist':true,'playlist':'https://podcasts.files.bbci.co.uk/p002vsnk.rss'}" ></script>
-<!-- SCM Music Player script end -->
-
-
-    
-    <h1>Rádio</h1>
-    <div>
-        <a class="link" href="https://radio.indymedia.pt/listen/hacking/radio.mp3">MP3</a>
-        <a class="link" href="https://radio.indymedia.pt/public/hacking/playlist.m3u">M3U</a>
-        <a class="link" href="https://radio.indymedia.pt/public/hacking/playlist.pls">PLS</a>
-        <a class="social-link" href="https://t.me/s/radioparalelo">📲</a>
+    <div class="container">
+        <h1>My Homemade Radio Channel</h1>
+        <div class="rss-feed">
+            <h2>RSS Feed</h2>
+            <iframe src="https://funk.gravitywell.xyz/api/v1/channels/slow/rss" width="100%" height="400" style="border:none;"></iframe>
+        </div>
+        <div class="embed-iframe">
+            <h2>Embed</h2>
+            <iframe width="100%" height="330" scrolling="no" frameborder="no" src="https://funk.gravitywell.xyz/embed.html?&amp;type=artist&amp;id=7449"></iframe>
+        </div>
     </div>
-    <footer>
-        <p>🄯 Rádio Trevo</p>
-    </footer>
 </body>
 </html>
